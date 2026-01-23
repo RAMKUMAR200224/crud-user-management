@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.json());
 dotenv.config();
 
-const PORT = process.env.port || 8000;
+const PORT = process.env.port || 3000;
 const mongo_url = process.env.mongo_url;
 
 mongoose.connect(mongo_url).then(() => {

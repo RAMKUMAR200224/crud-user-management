@@ -4,7 +4,8 @@ import {
     fetch,
     fetchOne,
     updateUser,
-    deleteUser
+    deleteUser,
+    ram
 } from "../controller/usercontroller.js";
 
 const route = express.Router();
@@ -14,5 +15,6 @@ route.get("/fetch", fetch);
 route.get("/fetch/:id", fetchOne);
 route.put("/update/:id", updateUser);
 route.delete("/delete/:id", deleteUser);
+route.get("/ram", ram);
 
 export default route;
